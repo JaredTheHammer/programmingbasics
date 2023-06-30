@@ -1,9 +1,79 @@
-/* Add your CSS styles here */
-body {
-    background-color: #af2323;
-}
 
-h1 {
-    color: #333333;
-    text-align: center;
-}
+    body {
+        font-family: Arial, sans-serif;
+        position: relative;
+        padding: 1rem;
+        background: #1a1a1a; /* dark background color */
+        color: #f8f8f8; /* light text color */
+    }
+
+    .container {
+        background: #2d2d2d; /* darker container color */
+        max-width: 600px;
+        margin: 2rem auto;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 15px rgba(0,0,0,0.5); /* darker shadow */
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #888; /* light gray border */
+        border-radius: 0.25rem;
+        background: #444; /* dark input field */
+        color: #fff; /* white text */
+    }
+
+    .form-group button {
+        width: 100%;
+        padding: 0.75rem;
+        background-color: #008CBA;
+        color: #ffffff;
+        border: none;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 0.5rem;
+    }
+
+    .form-group button:hover {
+        background-color: #00465d;
+    }
+
+    .output-message {
+        margin-top: 1rem;
+        padding: 1rem;
+        border-radius: 0.25rem;
+        display: none;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .output-message.success {
+        background-color: #2a543a; /* dark green success message */
+        color: #aefcae; /* light green text */
+    }
+
+    .output-message.error {
+        background-color: #543a3a; /* dark red error message */
+        color: #fcaeae; /* light red text */
+    }
