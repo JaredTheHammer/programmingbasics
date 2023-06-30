@@ -57,10 +57,12 @@
         event.preventDefault();
 
         const grade = Number(gradeInput.value);
+        console.log(grade);
         const error = validateGrade(grade);
 
         if (error) {
             setState({ error });
+            console.log(error)
         } else {
             const result = grades.reverse().find(gradeInfo => grade >= gradeInfo.threshold);
             grades.reverse(); // revert to original order
